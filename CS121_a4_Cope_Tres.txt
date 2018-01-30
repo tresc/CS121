@@ -1,0 +1,91 @@
+/*******************************************************************
+*   CS 121 Programming Assignment 4
+*   File: Dungeon Crawl
+*   Author: Tres Cope, rdc0024@uah.edu
+*   Desc: A guide to my text-based adventure game
+*   Date: Jan 30th 2018
+*
+*   I attest that this program is entirely my own work
+*******************************************************************/
+
+*Setting: 
+
+The exact year is unknown, but it is estimated to be the early 21st century. The player 
+wakes up in a cavern; The player does not yet know that he is in Hell. The player is given an 
+oil lamp [Which will run out after a certain number of uses, look for oil!] The object of the game is to find the 
+door that leads back into the human world. In the player will need to find four artifacts to
+help them open the final door. The player will encounter creatures that will try to deter 
+[i.e EAT!] the player. The object of the game is not to defeat the demons, rather the player 
+should avoid them at all costs, but to escape from them. As the player progresses through the 
+game they will find health packs to replenish their health, and memorabilia from the player's 
+past to replenish their sanity [wow! not only do demons damage you, but the longer you stay 
+in Hell the more "insane" you get. Fun times :)]
+
+*Gamplay:
+
+Movement is easy: 'n' for North, 's' for South, 'e' for East, 'n' for West
+
+'p' to pick up items
+
+'o' to refill your oil lamp
+
+'l' to light up the room, and search for items
+
+*Items:
+
+Sanity Items:
+-Old photograph
+-iPod
+-Notebook
+-Lock of hair
+-Wallet
+-Sunglasses
+-Nike socks
+-Note
+
+Heath Items:
+-Mountain Dew
+-Skittles
+
+Treasures:
+-Platinum Key
+-Gold Key
+-Diamond Key
+-Silver Key
+
+*Demons:
+-Lesser Demon
+-Greater Demon
+-Beelzebub
+
+---------- ---------- ---------- ---------- ---------- -----------
+|         |          |          |          | Beelzebub|          |
+
+| Greater |  oil     |   key 4  |          |          |    exit  |
+
+| Demon   |          |          |          |          |          |
+---------- ---------- ---------- ---------- ---------- -----------
+|         |          |          |          |          |          |
+
+| Health  | sanity   |  lesser  | sanityx2 |          | Health   |
+
+|         |          |  demon   |          |          |          |
+---------- ---------- ---------- ---------- ---------- -----------
+|         |          |          |          |          |          |
+
+| Greater |          |   oil    |          | Health   |  lesser  |
+
+| demon   |          |          |          |          | Demon    |
+---------- ---------- ---------- ---------- ---------- -----------
+|         |          |          |          |          |          |
+
+|         |  health  |          |          | Lesser   |          |
+
+|         |          |          |          |   Demon  |          |
+---------- ---------- ---------- ---------- ---------- -----------
+|         |          |          |          |          |          |
+
+|  start  |          |  sanity  |          |          |   oil    |
+
+|         |          |          |          |          |          |
+---------- ---------- ---------- ---------- ---------- -----------
