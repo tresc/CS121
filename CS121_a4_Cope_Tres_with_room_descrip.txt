@@ -1,0 +1,132 @@
+/*******************************************************************
+*   CS 121 Programming Assignment 4
+*   File: Dungeon Crawl
+*   Author: Tres Cope, rdc0024@uah.edu
+*   Desc: A guide to my text-based adventure game
+*   Date: Jan 30th 2018
+*
+*   I attest that this program is entirely my own work
+*******************************************************************/
+
+*Setting: 
+
+The exact year is unknown, but it is estimated to be the early 21st century. The player 
+wakes up in a cavern; The player does not yet know that he is in Hell. The player is given an 
+oil lamp [Which will run out after a certain number of uses, look for oil!] The object of the game is to find the 
+door that leads back into the human world. In the player will need to find four artifacts to
+help them open the final door. The player will encounter creatures that will try to deter 
+[i.e EAT!] the player. The object of the game is not to defeat the demons, rather the player 
+should avoid them at all costs, but to escape from them. As the player progresses through the 
+game they will find health packs to replenish their health, and memorabilia from the player's 
+past to replenish their sanity [wow! not only do demons damage you, but the longer you stay 
+in Hell the more "insane" you get. Fun times :)]
+
+*Gamplay:
+
+Movement is easy: 'n' for North, 's' for South, 'e' for East, 'n' for West
+
+'p' to pick up items
+
+'o' to refill your oil lamp
+
+'l' to light up the room, and search for items
+
+*Items:
+
+Sanity Items:
+-Old photograph
+-iPod
+-Notebook
+-Lock of hair
+-Wallet
+-Sunglasses
+-Nike socks
+-Note
+
+Heath Items:
+-Mountain Dew
+-Skittles
+
+Treasures:
+-Platinum Key
+-Gold Key
+-Diamond Key
+-Silver Key
+
+*Demons:
+-Lesser Demon
+-Greater Demon
+-Beelzebub
+
+*Rooms: ROWxCOLLUMN
+
+0x0 Greater cavern
+1x0 Tunnel
+2x0 Greater cavern
+3x0 Tunnel
+4x0 Holding cell
+
+0x1 Tunnel
+1x1 Torture room
+2x1 Tunnel
+3x1 lesser cavern
+4x1 tunnel
+
+0x2 Storage room
+1x2 Tunnel
+2x2 Armory
+3x2 Tunnel
+4x2 Lesser cavern
+
+
+0x3 Tunnel
+1x3 Pit
+2x3 Tunnel
+3x3 Lesser cavern
+4x3 Tunnel
+
+0x4 Throne room
+1x4 Tunnel
+2x4 Kitchen
+3x4 Tunnel
+4x4 Auditorium
+
+0x5 Gold elevator
+1x5 Tunnel
+2x5 Torture room
+3x5 Tunnel
+4x5 English classroom
+
+
+            0          1          2          3          4          5
+	---------- ---------- ---------- ---------- ---------- -----------
+	|         |          |          |          | Beelzebub|          |
+	
+0	| Greater |  oil     |   key 4  |          |          |    exit  |
+	
+	| Demon   |          |          |          |          |          |
+	---------- ---------- ---------- ---------- ---------- -----------
+	|         |          |          |          |          |          |
+	
+1	| Health  | sanity   |  lesser  | sanityx2 |          | Health   |
+	
+	|         |          |  demon   |          |          |          |
+	---------- ---------- ---------- ---------- ---------- -----------
+	|         |          |          |          |          |          |
+	
+2	| Greater |          |   oil    |          | Health   |  lesser  |
+	
+	| demon   |          |          |          |          | Demon    |
+	---------- ---------- ---------- ---------- ---------- -----------
+	|         |          |          |          |          |          |
+	
+3	|         |  health  |          |          | Lesser   |          |
+	
+	|         |          |          |          |   Demon  |          |
+	---------- ---------- ---------- ---------- ---------- -----------
+	|         |          |          |          |          |          |
+	
+4	|  start  |          |  sanity  |          |          |   oil    |
+	
+	|         |          |          |          |          |          |
+	---------- ---------- ---------- ---------- ---------- -----------
